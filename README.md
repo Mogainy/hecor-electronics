@@ -15,7 +15,22 @@ Administrators can manage repair bookings, monitor service progress, and maintai
 This project demonstrates practical full-stack web development, database integration, administrative workflows, and customer-facing web functionality.
 
 ## ✨ Key Features
+## 📸 System Screenshots
 
+### Homepage
+![HECOR Homepage](screenshots/homepage.png)
+
+### Product Catalog
+![Product Catalog](screenshots/catalog.png)
+
+### Repair Booking
+![Repair Booking](screenshots/repair-booking.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### Product Management
+![Product Management](screenshots/product-management.png)
 ### 🔧 Repair Booking System
 
 - Online electronics repair booking.
