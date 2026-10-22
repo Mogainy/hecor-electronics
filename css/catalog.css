@@ -1,0 +1,493 @@
+/* ==========================
+   HECOR PRODUCT CATALOG
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+:root{
+    --primary:#0b6cf7;
+    --secondary:#0f172a;
+    --light:#f5f8ff;
+    --white:#ffffff;
+    --success:#22c55e;
+    --warning:#ff9800;
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+body{
+    background:var(--light);
+    color:#333;
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+header{
+    background:var(--primary);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo p{
+    margin-top:6px;
+    opacity:.9;
+}
+
+.back-btn{
+    background:white;
+    color:var(--primary);
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#eef4ff;
+}
+
+/* ==========================
+          HERO
+========================== */
+
+.hero{
+    background:linear-gradient(rgba(11,108,247,.85),rgba(11,108,247,.85)),
+    url("../images/banner.jpg") center/cover;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* ==========================
+        SEARCH
+========================== */
+
+.search-area{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+}
+
+.search-area input{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:40px;
+    box-shadow:var(--shadow);
+    font-size:16px;
+    outline:none;
+}
+
+/* ==========================
+      FILTER BUTTONS
+========================== */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.filters button{
+    padding:12px 22px;
+    border:none;
+    background:white;
+    color:#333;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.filters button:hover,
+.filters .active{
+    background:var(--primary);
+    color:white;
+}
+
+/* ==========================
+     PRODUCTS CONTAINER
+========================== */
+
+.products{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* Category Title */
+
+.category-title{
+    font-size:30px;
+    color:var(--primary);
+    margin:60px 0 25px;
+    border-left:6px solid var(--primary);
+    padding-left:15px;
+}
+
+/* Product Grid */
+
+.catalog{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* ==========================
+        PRODUCT CARD
+========================== */
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.35s;
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    background:white;
+    padding:15px;
+}
+
+.info{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.info h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.info p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.price{
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.stock{
+    color:var(--success);
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* ==========================
+        BADGES
+========================== */
+
+.badge{
+
+position:absolute;
+
+top:15px;
+left:15px;
+
+background:#ff9800;
+
+padding:8px 15px;
+
+border-radius:30px;
+
+font-size:12px;
+
+font-weight:700;
+
+color:white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+}
+
+/* ==========================
+      BUTTONS
+========================== */
+
+.buttons{
+    margin-top:auto;
+}
+
+.order{
+    display:block;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.order:hover{
+    background:#1ebc57;
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+.copyright{
+    margin-top:20px;
+    opacity:.7;
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+header{
+    text-align:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.logo h1{
+    font-size:26px;
+}
+
+}
+/* SUMMARY */
+
+.summary{
+
+width:90%;
+
+max-width:1200px;
+
+margin:30px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.summary-card{
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+}
+
+.summary-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.summary-card h2{
+
+font-size:40px;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.summary-card p{
+
+font-size:17px;
+
+font-weight:600;
+
+}
+.floating-whatsapp{
+...
+}
+#topBtn{
+
+position:fixed;
+
+bottom:105px;
+
+right:30px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+background:#0b6cf7;
+
+color:white;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:20px;
+
+display:none;
+
+box-shadow:var(--shadow);
+
+}
+.rating{
+
+color:#f6b100;
+
+margin:10px 0;
+
+font-size:17px;
+
+font-weight:bold;
+
+}
+
+.rating span{
+
+color:#555;
+
+font-size:14px;
+
+margin-left:5px;
+
+}
+/* SUMMARY */
+
+.summary{
+
+width:90%;
+
+max-width:1200px;
+
+margin:30px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.summary-card{
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+}
+
+.summary-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.summary-card h2{
+
+font-size:40px;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.summary-card p{
+
+font-size:17px;
+
+font-weight:600;
+
+}
